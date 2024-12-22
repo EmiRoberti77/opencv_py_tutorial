@@ -11,6 +11,13 @@ def draw_circle(event, x,y,flags, param):
         #(0,255,0) color
         # -1 = inverted ( fill inside the circle )
         cv2.circle(img,(x,y),100,(0,255,0),-1)
+    elif event == cv2.EVENT_RBUTTONDOWN:
+        #pass the image,
+        # x,y are coming from the call back
+        #100 = redius
+        #(0,255,0) color
+        # -1 = inverted ( fill inside the circle )
+        cv2.circle(img,(x,y),100,(255,0,0),-1)
 
 #link the image to event call back use the window name
 #in this sample is 'emi_image'
